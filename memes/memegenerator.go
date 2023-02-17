@@ -74,7 +74,6 @@ func fillCaptions(template imgflipgo.Meme, captions []string) ([]imgflipgo.TextB
 	}
 	for i := 0; i < len(boxes); i++ {
 		boxes[i].Text = captions[i]
-		boxes[i].SetColor(0xFFFFFF)   //white
 		boxes[i].SetOutlineColor(0x0) //black
 	}
 	return boxes, nil
