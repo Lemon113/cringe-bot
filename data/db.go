@@ -23,7 +23,6 @@ func NewDB(l *log.Logger) *DB {
 		return nil
 	}
 
-	l.Println(string(file))
 	err = json.Unmarshal(file, &db)
 
 	if err != nil {
